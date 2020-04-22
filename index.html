@@ -1,0 +1,82 @@
+<html>
+<head>
+<script type="text/javascript">
+
+ function displaynum(n1)
+ {
+  calcform.txt1.value=calcform.txt1.value+n1;
+ }
+ function clr()
+{
+document.getElementById("output").value = "";
+}
+  
+</script>
+<style>
+body{
+background-image:url(back.jpg);
+background-size: cover;
+}
+ #clear
+ {
+  width:175px;
+ }
+  input
+ {
+  width:40px;
+ }
+
+ #output
+ {
+  width:175px;
+ }
+ .formstyle
+ {
+     border:solid rgba(77, 70, 70, 0.5) 10px;
+     border-radius:30px;
+     width:200px;
+     padding-top: 10px;
+     background-color: rgb(28, 28, 31);
+
+ }
+
+</style>
+
+</head>
+<body style="background-image:'back.jpg';">
+<center>
+<div class="formstyle">
+
+<form name="calcform">
+
+<input type=text name=txt1 id="output" style="text-align:right"></br><br>
+
+<input type=button name=b9 value="9" onclick="displaynum(b9.value)">
+<input type=button name=b8 value="8" onclick="displaynum(b8.value)">
+<input type=button name=b7 value="7" onclick="displaynum(b7.value)">
+<input type=button name=badd value=" + " onclick="displaynum(badd.value)"><br><br>
+
+<input type=button name=b6 value="6" onclick="displaynum(b6.value)">
+<input type=button name=b5 value="5" onclick="displaynum(b5.value)">
+<input type=button name=b4 value="4" onclick="displaynum(b4.value)">
+<input type=button name=bsub value=" - " onclick="displaynum(bsub.value)"><br><br>
+
+<input type=button name=b3 value="3" onclick="displaynum(b3.value)">
+<input type=button name=b2 value="2" onclick="displaynum(b2.value)">
+<input type=button name=b1 value="1" onclick="displaynum(b1.value)">
+<input type=button name=bmul value=" * " onclick="displaynum(bmul.value)"><br><br>
+
+<input type=button name=b0 value="0" onclick="displaynum(b0.value)">
+<input type=button name=bpon value="." onclick="displaynum(bpon.value)">
+<input type=button name=beql value=" = " onclick="txt1.value=eval(txt1.value)">
+<input type=button name=bdiv value=" / " onclick="displaynum(bdiv.value)"><br><br>
+
+<input type=button value="CLEAR" id=clear onclick="clr()">
+
+</form>
+
+</div>
+</center>
+</body>
+
+</html>
