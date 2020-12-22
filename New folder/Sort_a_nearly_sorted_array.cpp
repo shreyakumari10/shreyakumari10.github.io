@@ -1,12 +1,5 @@
 /* Sort a nearly sorted (or K sorted) array
 
-Given an array of n elements, 
-where each element is at most k away from its target position. 
-The task is to print array in sorted form. 
-
-n denoting number of elements in array,
-k denoting the element is at most k positions away from its target position. */
-
 
 #include <bits/stdc++.h>
 #include <iostream>
